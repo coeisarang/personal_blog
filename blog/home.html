@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사랑's Blog</title>
+    <style>
+
+        #header{
+            width: 100%;
+            height: 500x;
+
+        }
+        #main{
+            height: 400px;
+            width: 100%;
+            padding: 0px auto;
+
+        }
+        #footer{
+            margin-top: 20px;
+            height: 1200px;
+            width: 100%;
+            text-align: center;
+        }
+        #top-menu, #container, #footer-menu{
+            position: relative;
+            width: 1500px;
+            margin: 0px auto;
+            height: 100%;
+
+        }
+
+        body{
+            background-image: url(images/dott.png);
+            
+        }
+        #img1{
+            margin: 30px;
+            width: 100%;
+        }
+        #img2{
+            margin: 25px;
+            width: 220px;
+        }
+        #img3{
+            width: 200px;
+            margin-top: 480px;
+            margin-right: 80px;
+            float: right;
+        }
+        #img4{
+            margin-top: 220px;
+        }
+        #img5{
+            width: 55px;
+            margin-top: -72px;
+            margin-right: 17px;
+            float: right;
+
+        }
+
+        caption{
+            float: left;
+            width: 100px;
+            height: 30px;
+        }
+        .caption{
+            float: left;
+            height: 300px;
+            width: 300px;
+        }
+        li a{
+            width: 150px;
+            padding:  5px 0px;
+            font-size:  16px;
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            background: rgb(253, 253, 253);
+            border:  1px solid #000000;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        ul li{
+            width: 200px;
+            display: inline-block;
+            margin:  4px;
+            text-align: center;
+        }
+        .prod-list .caption{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            padding-top: 0px;
+            background: rgb(255, 255, 255);
+            opacity: 0;
+            transition: all 0.6s ease-in-out;
+        }
+        .prod-list li:hover .caption {
+            opacity: 1;
+            transform: translateY(-200);
+        }
+        .prod-list .caption li{
+            border: 1px solid black;
+            color:  #000000;
+            text-align: center;
+            margin-left: -16px;
+            width: 152px;
+        }
+        .caption li{
+            float:  left;
+            padding:  0;
+            margin:  0px;
+            overflow:  hidden;
+            position:  relative;
+        }
+
+        #contents1{
+            margin: 0px;
+            width: 280px;
+            height: 1140px;
+            padding: 20px;
+            border:  1px solid #8b8b8b;
+            background-color: white;
+            border-radius: 5px;
+            float: left;
+            margin-right: 10px;
+        }
+        #contents2{
+            /* margin-top: 35px; */
+            font-size: 20px;
+            width: 740px;
+            background-color: white;
+            height: 270px;
+            padding: 50px;
+            border:  1px solid #8b8b8b;
+            float: left;
+            border-radius: 5px;
+            
+        }
+        #contents3{
+            text-align: center;
+            /* margin-left: 320px; */
+            margin-top: 390px;
+            width: 800px;
+            height: 750px;
+            font-size: 17px;
+            background-color: white;
+            padding: 20px;
+            border:  1px solid #8b8b8b;
+            border-radius: 5px;  
+        
+            
+        }
+        #contents4{   
+            margin-left: 0px;
+            /* margin-top: 0px; */
+            width: 250px;
+            font-size: 20px;
+            padding: 50px;
+            height: 600px;
+            background-color: white;
+            border:  1px solid #866161;
+            border-radius: 5px;   
+        }
+        #contents5{
+            /* margin-left: 650px; */
+            margin-top: 15px;
+            width: 290px;
+            height: 402px;
+            background-color: white;
+            padding: 30px;
+            border:  1px solid #8b8b8b;
+            border-radius: 5px; 
+            /* float: right;    */
+        }
+        .container2{
+
+            margin-left: 10px;
+            width: 650px;
+            height: 1000px;
+            float: left;
+            border-radius: 5px;
+            
+        }
+        .container3{
+            width: 300px;
+            height: 1000px;
+            float: right;
+            border-radius: 5px;
+            
+        }
+        #p1{
+            color: #8b8b8b;
+            border-bottom:2px solid #ddd ;
+        }
+        .list-image2{
+            list-style-image: url(images/pp.jpg);
+            list-style-position: outside;
+        }
+        .list-image1{
+            list-style-image: url(images/strawberry1.png);
+            list-style-position: outside;
+        }
+        img{
+            width: 240px;
+        }
+
+        h1{
+            margin-right: 90px;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <div id="top-menu">
+    <header>
+        <div>
+            <ul class="prod-list">
+                <li>
+                    <a href="detail.html" >DETAIL</a> 
+                    <ul class="caption">
+                        <li><a href="detail1.html"> 2020</a></li>
+                        <li><a href="detail2.html"> 2021</a></li>
+                        <li><a href="detail3.html"> 2022</a></li>
+                        <li><a href="detail4.html"> 2023</a></li>
+                        <li><a href="detail5.html"> 2024</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                    <ul class="caption">
+                    </ul>
+                </li>
+                <li>
+                    <a href="posts.html" >POSTS</a>
+                    <ul class="caption">
+                        <li><a href="posts1.html">봉사활동</a></li>
+                        <li><a href="posts2.html">인턴십</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="home.html">HOME</a>
+                    <ul class="caption">
+                    </ul>
+                </li>
+                <li>
+                    <a href="cotact.html" >CONTACT</a>
+                    <ul class="caption">
+                        <li><a href="contact1.html">help me</li></a>  
+                        <li><a href="contact2.html">contact</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="login.html" >LOGIN</a>
+                    <ul class="caption">
+                        <li><a href="login1.html"> 로그인</a></li>
+                        <li><a href="login2.html"> 회원 가입</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <img id="img1" src="images/hh.png" alt="width=100%">
+        </div>
+    </header>
+</div>
+</div>
+
+
+    <div id="main">
+        <div id="container">
+        
+        <div id="contents1">
+            <img id="img2"  src="images/IMG_8404.jpeg" alt="최사랑" width="200"/>
+            <h1>최사랑</h1>
+            <p>만 24세</p>
+            <p id="p1">자바 풀스택 7기</p>
+            <ol class="list-image2">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>자바스크립트</li>
+
+                <!-- <img id="img3" src="images/footer.png" alt="최사랑" width="200"/> -->
+                <!-- <a href="personal.html"><img id="img5" src="images/free-icon-resume-4606625.png" alt="최사랑" width="200"/></a> -->
+
+            </ol>
+        </div>
+        <div class="container2">
+        <div id="contents2">
+            <p id="p1">오늘의 이야기</p>
+            <ol class="list-image1">
+                <li>오늘은 CSS의 background 요소에 대해서 배웠어요!</li>
+                <li>오늘은 CSS의 repeat 요소에 대해서 배웠어요!</li>
+                <li>CSS에 대한 이야기를 남겨주세요~</li>
+            </ol>
+        </div>
+            
+        <div id="contents3">
+        <div>
+            <article>
+                학력사항
+            </article>
+            <hr>
+        </div>
+
+        <table style="border-collapse: collapse">
+            <thead>
+            <tr style="border: 1px solid white">
+                <th style="border: 1px solid white"> &nbsp;년/월&nbsp; </th> 
+                <th style="border: 1px solid white">&nbsp;학교명&nbsp;</th>
+                <th style="border: 1px solid white">&nbsp;학과&nbsp;</th>
+                <th style="border: 1px solid white">&nbsp;졸업구분&nbsp;</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr style="border: 1px solid white">
+                    <td style="border: 1px solid white">&nbsp;&nbsp;2020-2024 &nbsp; </td>
+                    <td style="border: 1px solid white">&nbsp;백석대학교 &nbsp;</td>
+                    <td style="border: 1px solid white"> &nbsp;컴퓨터공학과 &nbsp; </td>
+                    <td style="border: 1px solid white">&nbsp;&nbsp;졸업 &nbsp;</td>
+                </tr>
+                <tr style="border: 1px solid white">
+                    <td style="border: 1px solid white">2017-2019 </td>
+                    <td style="border: 1px solid white">안산고등학교</td>
+                    <td style="border: 1px solid white">이과</td>
+                    <td style="border: 1px solid white">졸업</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <div>
+            <article>
+                경력사항
+            </article>
+            <hr>
+        </div>
+
+        <table style="border-collapse: collapse">
+            <thead>
+            <tr style="border: 1px solid white">
+                <th style="border: 1px solid white"> 근무기간</th>
+                <th style="border: 1px solid white">회사명</th>
+                <th style="border: 1px solid white">직무</th>
+                <th style="border: 1px solid white">직급</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr style="border: 1px solid white">
+                    <td style="border: 1px solid white">2022.10-2024.06 &nbsp;</td>
+                    <td style="border: 1px solid white">파리바게트 &nbsp;</td>
+                    <td style="border: 1px solid white"> 매장관리 및 캐셔 &nbsp;</td>
+                    <td style="border: 1px solid white">아르바이트 &nbsp;</td>
+                </tr>
+                <tr style="border: 1px solid white">
+                    <td style="border: 1px solid white">2023.02-2023.03</td>
+                    <td style="border: 1px solid white">UTOPLANET</td>
+                    <td style="border: 1px solid white">HP업데이트 및 영업</td>
+                    <td style="border: 1px solid white">인턴</td>
+                </tr>
+                <tr style="border: 1px solid white">
+                    <td style="border: 1px solid white">2020.07-2022.09</td>
+                    <td style="border: 1px solid white">요거프레소</td>
+                    <td style="border: 1px solid white">매장관리 및 음료제조</td>
+                    <td style="border: 1px solid white">점장</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <div>
+            <article>
+                자격 및 면허
+            </article>
+            <hr>
+        </div>
+        <table style="border-collapse: collapse">
+            <thead>
+            <tr style="border: 1px solid white">
+                <th style="border: 1px solid white">자격증명</th>
+                <th style="border: 1px solid white">취득일자</th>
+                <th style="border: 1px solid white">발행기관</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr style="border: 1px solid white">
+                    <td style="border: 1px solid white">자동차운전면허2종 보통 &nbsp;</td>
+                    <td style="border: 1px solid white"> 23.04.26 &nbsp;</td>
+                    <td style="border: 1px solid white">경기도 남부 경찰청장 &nbsp;</td>
+                </tr>
+                <tr style="border: 1px solid white">
+                    <td style="border: 1px solid white">정보처리기사 필기</td>
+                    <td style="border: 1px solid white">24.07.14</td>
+                    <td style="border: 1px solid white">큐넷</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <div>
+            <article>
+                대외활동
+            </article>
+            <hr>
+        </div>
+        <table style="border-collapse: collapse">
+            <thead>
+            <tr style="border: 1px solid white">
+                <th style="border: 1px solid white">활동기간</th>
+                <th style="border: 1px solid white">기관명</th>
+                <th style="border: 1px solid white">내용</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr style="border: 1px solid white">
+                    <td style="border: 1px solid white">2023.11-2023.12 &nbsp;</td>
+                    <td style="border: 1px solid white"> 코드클럽 한국위원회 &nbsp;</td>
+                    <td style="border: 1px solid white">코딩교육봉사 &nbsp;</td>
+                </tr>
+                <tr style="border: 1px solid white">
+                    <td style="border: 1px solid white">2023.02-2023.03</td>
+                    <td style="border: 1px solid white">UTOPLANET</td>
+                    <td style="border: 1px solid white">일본 게임 회사 인턴</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <div>
+            <article>
+                수상내역
+            </article>
+            <hr>
+        </div>
+        <table style="border-collapse: collapse">
+            <thead>
+            <tr style="border: 1px solid white">
+                <th style="border: 1px solid white">수상일시</th>
+                <th style="border: 1px solid white">수상내용</th>
+                <th style="border: 1px solid white">수상결과</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr style="border: 1px solid white">
+                    <td style="border: 1px solid white">2023.08-2023.12 &nbsp;</td>
+                    <td style="border: 1px solid white"> 백석대학교 &nbsp;</td>
+                    <td style="border: 1px solid white">멀티미디어 경진대회 우수상 &nbsp;</td>
+                </tr>
+                <tr style="border: 1px solid white">
+                    <td style="border: 1px solid white">2024.03-2024.06</td>
+                    <td style="border: 1px solid white">(사)국제문화기술진흥원</td>
+                    <td style="border: 1px solid white">창업발명공모전 단체상</td>
+                </tr>
+            </tbody>
+        </table>  
+        </div>
+    </div>
+        
+    <div class="container3">
+        <div id="contents4">
+            <p id="p1">오늘 해야 할 일</p>
+            <ol class="list-image1">
+                <li>CSS 복습하기</li>
+                <li>DB 1강 마무리 하기</li>
+                <li>HTML 복습하기</li>
+            </ol>
+            <img id="img4" src="images/umm.gif"/>
+
+        </div>
+
+        <div id="contents5">
+            <p id="p1">오늘 블로그 방문자</p>
+            <ol class="list-image1">
+                <img src="images/blog2.png" alt="최사랑" />
+                <img src="images/blog-people.png" alt="최사랑" />
+            </ol>
+            
+        </div>
+    </div>
+
+    
+    
+    <div id="footer">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사랑's Blog</title>
+    <style>
+        fieldset{
+            background-color: white;
+        }
+        h1{
+            text-align: center;
+        }
+
+        #header{
+            width: 100%;
+            height: 500x;
+
+        }
+        #main{
+            height: 400px;
+            width: 100%;
+            padding: 0px auto;
+        }
+        #footer{
+            height: 1000px;
+            width: 100%;
+        }
+        #top-menu, #container, #footer-menu{
+            position: relative;
+            width: 1500px;
+            margin: 0px auto;
+            height: 100%;
+
+        }
+
+        body{
+            background-image: url(images/dott.png);
+            
+        }
+        #img1{
+            margin: 30px;
+            width: 100%;
+        }
+        #img2{
+            margin: 25px;
+            border: 1px solid black;
+            width: 150px;
+        }
+
+
+        caption{
+            float: left;
+            width: 100px;
+            height: 30px;
+        }
+        .caption{
+            float: left;
+            height: 300px;
+            width: 300px;
+        }
+        li a{
+            width: 150px;
+            padding:  5px 0px;
+            font-size:  16px;
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            background: rgb(253, 253, 253);
+            border:  1px solid #000000;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        ul li{
+            width: 200px;
+            display: inline-block;
+            margin:  4px;
+            text-align: center;
+        }
+        .prod-list .caption{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            padding-top: 0px;
+            background: rgb(255, 255, 255);
+            opacity: 0;
+            transition: all 0.6s ease-in-out;
+        }
+        .prod-list li:hover .caption {
+            opacity: 1;
+            transform: translateY(-200);
+        }
+        .prod-list .caption li{
+            border: 1px solid black;
+            color:  #000000;
+            text-align: center;
+            margin-left: -16px;
+            width: 152px;
+        }
+        .caption li{
+            float:  left;
+            padding:  0;
+            margin:  0px;
+            overflow:  hidden;
+            position:  relative;
+        }
+
+        #contents1{
+            margin: 0px;
+            width: 230px;
+            height: 940px;
+            padding: 20px;
+            border:  1px solid #8b8b8b;
+            background-color: white;
+            border-radius: 5px;
+            float: left;
+            margin-right: 10px;
+        }
+        #contents2{
+            margin-top: 35px;
+            margin-left: 320px;
+            width: 1000px;
+            background-color: white;
+            height: 1000px;
+            padding: 20px;
+            border:  1px solid #8b8b8b;
+            border-radius: 5px;
+        }
+
+        #p1{
+            color: #8b8b8b;
+            border-bottom:2px solid #ddd ;
+        }
+        .list-image2{
+            list-style-image: url(images/pp.jpg);
+            list-style-position: outside;
+        }
+        .list-image1{
+            list-style-image: url(images/strawberry1.png);
+            list-style-position: outside;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <div id="top-menu">
+    <header>
+        <div>
+            <ul class="prod-list">
+                <li>
+                    <a href="detail.html" >DETAIL</a> 
+                    <ul class="caption">
+                        <li><a href="detail1.html"> 2020</a></li>
+                        <li><a href="detail2.html"> 2021</a></li>
+                        <li><a href="detail3.html"> 2022</a></li>
+                        <li><a href="detail4.html"> 2023</a></li>
+                        <li><a href="detail5.html"> 2024</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                    <ul class="caption">
+                    </ul>
+                </li>
+                <li>
+                    <a href="posts.html" >POSTS</a>
+                    <ul class="caption">
+                        <li><a href="posts1.html">봉사활동</a></li>
+                        <li><a href="posts2.html">인턴십</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="home.html">HOME</a>
+                    <ul class="caption">
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="cotact.html" >CONTACT</a>
+                    <ul class="caption">
+                        <li><a href="contact1.html">help me</li></a>  
+                        <li><a href="contact2.html">contact</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="login.html" >LOGIN</a>
+                    <ul class="caption">
+                        <li><a href="login1.html"> 로그인</a></li>
+                        <li><a href="login2.html"> 회원 가입</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <img id="img1" src="images/hh.png" alt="width=100%">
+        </div>
+    </header>
+</div>
+</div>
+
+
+    <div id="main">
+        <div id="container">
+        <div id="contents1">
+            <img id="img2"  src="images/IMG_8404.jpeg" alt="최사랑" width="200"/>
+            <h1>최사랑</h1>
+            <p>만 24세</p>
+            <p id="p1">자바 풀스택 7기</p>
+            <ol class="list-image2">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>자바스크립트</li>
+            </ol>
+        </div>
+        <fieldset>
+            <h1>2024주요 진행 프로젝트</h1>
+            <hr>
+            <div>
+                <article>
+                    프로젝트 명: 온도별 옷차림 추천 어플
+                </article>
+            
+                <p>프로젝트 진행기간:2024.03 ~2024.06 (4개월)</p>
+                <p>프로젝트 목적: 안그로이드 스튜디오 GrovyDSL, JAVA를 이용하여 어플 제작해보기</p>
+                <p>라이브러리/프레임워크: AndroidStudio 8.0(Grovy DSL), google 날씨 API</p>
+                <video src="video/h.mp4"  controls width="200" poster="포스터 속성 입니다." ></video>
+                <p>날씨, 온도별 옷차림 추천, 홈화면, 로그인 화면, 옷 구매 링크 란을 만들어 온도별 옷차림을 추천해주는 어플을 만들었습니다. 한 어플에서 온도확인, 옷차림 추천, 옷구매를 한번에 할 수 있는 유용한 어플입니다.</p>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <div>
+                <article>
+                    프로젝트 명: 온도 감지 싸이렌
+                </article>
+                <hr>
+                <p>프로젝트 진행기간:2024.03 ~2024.06 (4개월)</p>
+                <p>프로젝트 목적: 라즈베리 파이를 이용하여 프로젝트 제작하기</p>
+                <p>-라이브러리/프레임워크: 라즈베리 파이</p>
+                <video src="video/q.mov"  controls width="200" poster="포스터 속성 입니다." ></video>
+                <p>소방차를 연상케 하는 박스에 LCD를 달아 일정온도가 올라가면 부저와 LED가 켜지는 시스템을 제작하였습니다.</p>
+            </div>
+        </fieldset>
+        <br>
+        <f
+
+
+    </div>
+    <div id="footer">
+
+    </div>
+    </div>
+
+</body>
+</html>

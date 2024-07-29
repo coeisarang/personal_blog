@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사랑's Blog</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        
+        fieldset{
+            background-color: white;
+        }
+
+        #header{
+            width: 100%;
+            height: 500x;
+
+        }
+        #main{
+            height: 400px;
+            width: 100%;
+            padding: 0px auto;
+        }
+        #footer{
+            height: 1000px;
+            width: 100%;
+        }
+        #top-menu, #container, #footer-menu{
+            position: relative;
+            width: 1500px;
+            margin: 0px auto;
+            height: 100%;
+
+        }
+
+        body{
+            background-image: url(images/dott.png);
+            
+        }
+        #img1{
+            margin: 30px;
+            width: 100%;
+        }
+        #img2{
+            margin: 25px;
+            border: 1px solid black;
+            width: 150px;
+        }
+
+
+        caption{
+            float: left;
+            width: 100px;
+            height: 30px;
+        }
+        .caption{
+            float: left;
+            height: 300px;
+            width: 300px;
+        }
+        li a{
+            width: 150px;
+            padding:  5px 0px;
+            font-size:  16px;
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            background: rgb(253, 253, 253);
+            border:  1px solid #000000;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        ul li{
+            width: 200px;
+            display: inline-block;
+            margin:  4px;
+            text-align: center;
+        }
+        .prod-list .caption{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            padding-top: 0px;
+            background: rgb(255, 255, 255);
+            opacity: 0;
+            transition: all 0.6s ease-in-out;
+        }
+        .prod-list li:hover .caption {
+            opacity: 1;
+            transform: translateY(-200);
+        }
+        .prod-list .caption li{
+            border: 1px solid black;
+            color:  #000000;
+            text-align: center;
+            margin-left: -16px;
+            width: 152px;
+        }
+        .caption li{
+            float:  left;
+            padding:  0;
+            margin:  0px;
+            overflow:  hidden;
+            position:  relative;
+        }
+
+        #contents1{
+            margin: 0px;
+            width: 230px;
+            height: 940px;
+            padding: 20px;
+            border:  1px solid #8b8b8b;
+            background-color: white;
+            border-radius: 5px;
+            float: left;
+            margin-right: 10px;
+        }
+        #contents2{
+            margin-top: 35px;
+            margin-left: 320px;
+            width: 1000px;
+            background-color: white;
+            height: 1000px;
+            padding: 20px;
+            border:  1px solid #8b8b8b;
+            border-radius: 5px;
+        }
+
+        #p1{
+            color: #8b8b8b;
+            border-bottom:2px solid #ddd ;
+        }
+        .list-image2{
+            list-style-image: url(images/pp.jpg);
+            list-style-position: outside;
+        }
+        .list-image1{
+            list-style-image: url(images/strawberry1.png);
+            list-style-position: outside;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <div id="top-menu">
+    <header>
+        <div>
+            <ul class="prod-list">
+                <li>
+                    <a href="detail.html" >DETAIL</a> 
+                    <ul class="caption">
+                        <li><a href="detail1.html"> 2020</a></li>
+                        <li><a href="detail2.html"> 2021</a></li>
+                        <li><a href="detail3.html"> 2022</a></li>
+                        <li><a href="detail4.html"> 2023</a></li>
+                        <li><a href="detail5.html"> 2024</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                    <ul class="caption">
+                    </ul>
+                </li>
+                <li>
+                    <a href="posts.html" >POSTS</a>
+                    <ul class="caption">
+                        <li><a href="posts1.html">봉사활동</a></li>
+                        <li><a href="posts2.html">인턴십</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="home.html">HOME</a>
+                    <ul class="caption">
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="cotact.html" >CONTACT</a>
+                    <ul class="caption">
+                        <li><a href="contact1.html">help me</li></a>  
+                        <li><a href="contact2.html">contact</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="login.html" >LOGIN</a>
+                    <ul class="caption">
+                        <li><a href="login1.html"> 로그인</a></li>
+                        <li><a href="login2.html"> 회원 가입</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <img id="img1" src="images/hh.png" alt="width=100%">
+        </div>
+    </header>
+</div>
+</div>
+
+
+    <div id="main">
+        <div id="container">
+        <div id="contents1">
+            <img id="img2"  src="images/IMG_8404.jpeg" alt="최사랑" width="200"/>
+            <h1>최사랑</h1>
+            <p>만 24세</p>
+            <p id="p1">자바 풀스택 7기</p>
+            <ol class="list-image2">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>자바스크립트</li>
+            </ol>
+        </div>
+        <fieldset>
+            <h1>2020 주요 진행 프로젝트</h1>
+            <hr>
+            <div>
+                <article>
+                    프로젝트 명: C언어를 학교 주변 맛집 찾는 어플 제작하기
+                </article>
+                <br>
+                <img src="images/m1.jpeg" width="250px" id="img3">
+                <p>프로젝트 진행기간:2020.03 ~2020.06 (4개월)</p>
+                <p>-주요업무: 팀 내의 조장으로 팀원들의 역할 분배 및 주요 코드 설계
+                <p>-상세 역할: 주제 선정 및 주요 코드 작성</p>
+                <p>: 음식을 한식, 중식, 양식, 일식으로 나누어 각각의 팀원의 역할을 분배</p>
+                <p>: swich case 문을 사용하여 앱을 개발함</p>
+                <p>학교 앞 맛집 찾는 어플을 제작하였다. 학교 주변에서 밥을 고르는데 어려움이 있는 학생들에게 도움을 주는 어플을 개발 할 수 있게 되었다.</p>
+            </div>
+        </fieldset>
+
+
+
+    </div>
+    <div id="footer">
+
+    </div>
+    </div>
+
+</body>
+</html>

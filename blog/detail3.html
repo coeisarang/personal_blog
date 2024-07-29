@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사랑's Blog</title>
+    <style>
+        fieldset{
+            background-color: white;
+        }
+        h1{
+            text-align: center;
+        }
+
+        #header{
+            width: 100%;
+            height: 500x;
+
+        }
+        #main{
+            height: 400px;
+            width: 100%;
+            padding: 0px auto;
+        }
+        #footer{
+            height: 1500px;
+            width: 100%;
+        }
+        #top-menu, #container, #footer-menu{
+            position: relative;
+            width: 1500px;
+            margin: 0px auto;
+            height: 100%;
+
+        }
+
+        body{
+            background-image: url(images/dott.png);
+            
+        }
+        #img1{
+            margin: 30px;
+            width: 100%;
+        }
+        #img2{
+            margin: 25px;
+            border: 1px solid black;
+            width: 150px;
+        }
+
+
+        caption{
+            float: left;
+            width: 100px;
+            height: 30px;
+        }
+        .caption{
+            float: left;
+            height: 300px;
+            width: 300px;
+        }
+        li a{
+            width: 150px;
+            padding:  5px 0px;
+            font-size:  16px;
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            background: rgb(253, 253, 253);
+            border:  1px solid #000000;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        ul li{
+            width: 200px;
+            display: inline-block;
+            margin:  4px;
+            text-align: center;
+        }
+        .prod-list .caption{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            padding-top: 0px;
+            background: rgb(255, 255, 255);
+            opacity: 0;
+            transition: all 0.6s ease-in-out;
+        }
+        .prod-list li:hover .caption {
+            opacity: 1;
+            transform: translateY(-200);
+        }
+        .prod-list .caption li{
+            border: 1px solid black;
+            color:  #000000;
+            text-align: center;
+            margin-left: -16px;
+            width: 152px;
+        }
+        .caption li{
+            float:  left;
+            padding:  0;
+            margin:  0px;
+            overflow:  hidden;
+            position:  relative;
+        }
+
+        #contents1{
+            margin: 0px;
+            width: 230px;
+            height: 1800px;
+            padding: 20px;
+            border:  1px solid #8b8b8b;
+            background-color: white;
+            border-radius: 5px;
+            float: left;
+            margin-right: 10px;
+        }
+        #contents2{
+            margin-top: 35px;
+            margin-left: 320px;
+            width: 1000px;
+            background-color: white;
+            height: 1000px;
+            padding: 20px;
+            border:  1px solid #8b8b8b;
+            border-radius: 5px;
+        }
+
+        #p1{
+            color: #8b8b8b;
+            border-bottom:2px solid #ddd ;
+        }
+        .list-image2{
+            list-style-image: url(images/pp.jpg);
+            list-style-position: outside;
+        }
+        .list-image1{
+            list-style-image: url(images/strawberry1.png);
+            list-style-position: outside;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <div id="top-menu">
+    <header>
+        <div>
+            <ul class="prod-list">
+                <li>
+                    <a href="detail.html" >DETAIL</a> 
+                    <ul class="caption">
+                        <li><a href="detail1.html"> 2020</a></li>
+                        <li><a href="detail2.html"> 2021</a></li>
+                        <li><a href="detail3.html"> 2022</a></li>
+                        <li><a href="detail4.html"> 2023</a></li>
+                        <li><a href="detail5.html"> 2024</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                    <ul class="caption">
+                    </ul>
+                </li>
+                <li>
+                    <a href="posts.html" >POSTS</a>
+                    <ul class="caption">
+                        <li><a href="posts1.html">봉사활동</a></li>
+                        <li><a href="posts2.html">인턴십</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="home.html">HOME</a>
+                    <ul class="caption">
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="cotact.html" >CONTACT</a>
+                    <ul class="caption">
+                        <li><a href="contact1.html">help me</li></a>  
+                        <li><a href="contact2.html">contact</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="login.html" >LOGIN</a>
+                    <ul class="caption">
+                        <li><a href="login1.html"> 로그인</a></li>
+                        <li><a href="login2.html"> 회원 가입</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <img id="img1" src="images/hh.png" alt="width=100%">
+        </div>
+    </header>
+</div>
+</div>
+
+
+    <div id="main">
+        <div id="container">
+        <div id="contents1">
+            <img id="img2"  src="images/IMG_8404.jpeg" alt="최사랑" width="200"/>
+            <h1>최사랑</h1>
+            <p>만 24세</p>
+            <p id="p1">자바 풀스택 7기</p>
+            <ol class="list-image2">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>자바스크립트</li>
+            </ol>
+        </div>
+        <fieldset>
+            <h1>2022 주요 진행 프로젝트</h1>
+            <hr>
+            <div>
+                <article>
+                    프로젝트 명: 코랩을 이용하여 날씨별 교통사고율에 대한 데이터 분석해보기
+                </article>
+        
+                <img src="images/sa.jpeg" width="250px" id="img3">
+                <p>프로젝트 진행기간:2022.03~2022.06 (4개월)</p>
+                <p>주요업무: 날씨의 요소 중 습도에 대한 데이터를 가지고 와 습도에 따른 사고율을 조사하였다.</p>
+                <p>상세 역할 : 코랩을 이용하여 공공데이터 포털 사이트의 날씨데이터와 교통사고 사고율에 대한 데이터를 가지고 와 비교하여 분석하였다.  </p>
+                <p> 날씨 데이커에서 강수량, 안개, 온도를 기준으로 교통사고 사고별 데이터를 구하여 날씨병 교통사고율을 구하였다.</p>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <div>
+                <article>
+                    프로젝트 명:MFC를 이용 하여 공을 바닥에 닿지 않게 하는 게임 제작
+                </article>
+                <hr>
+                <img src="images/gr.gif" width="250px" id="img3">
+                <p>프로젝트 진행기간:2022.03~2022.06 (4개월)</p>
+                <p>주요업무: 공과 화면을 구성하는 x축과 y축에 대한 개념을 이용하여 공이 바에 맞으면 튕기도록 제작</p>
+                <p>상세 역할 : x축과 y축에 대한 개념을 이용하여 공이 바에 맞으면 튕기도록 제작 </p>
+                <p> 공이 바닥에 닿지 않게 하는 게임을 제작</p>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <div>
+                <article>
+                    프로젝트 명:node.js를 이용하여 웹 서버 만들어보기
+                </article>
+                <hr>
+                <img src="images/node.jpeg" width="250px" id="img3">
+                <p>프로젝트 진행기간:2022.03~2022.06 (4개월)</p>
+                <p>주요업무: node.js를 이용하여 비주얼 스튜디오 코드로 코드 작성하기</p>
+                <p>상세 역할 :VisualStudiocode를 이용하여 node.js 를 구성하고, DB를 제작하여 기프티콘 데이터를 저장하고 연동시키는 시스템을 제작 하였다.</p>
+                <p> 쿠폰 종류별로 쿠폰을 저장하고 이용하는 웹사이트 제작</p>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <article>
+                    프로젝트 명:3D MAX를 이용하여 나만의 캐릭터 만들기
+                </article>
+                <hr>
+                <img src="images/3d.jpeg" width="250px" id="img3">
+                <p>프로젝트 진행기간:2022.03~2022.06 (4개월)</p>
+                <p>주요업무:3D MAX 툴을 사용하여 3D 캐릭터 만들기</p>
+                <p>상세 역할 :캐릭터의 시나리오를 작성하여 캐릭터의 전반적인 스토리와 디자인 해주기</p>
+                <p> 3D MAX를 이용하여 빨간 망토를 쓴 토끼 제작</p>
+            </div>
+        </fieldset>
+
+
+    </div>
+    <div id="footer">
+
+    </div>
+    </div>
+
+</body>
+</html>

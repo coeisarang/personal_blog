@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사랑's Blog</title>
+    <style>
+        fieldset{
+            background-color: white;
+        }
+
+        #header{
+            width: 100%;
+            height: 500x;
+
+        }
+        #main{
+            height: 400px;
+            width: 100%;
+            padding: 0px auto;
+        }
+        #footer{
+            height: 900px;
+            width: 100%;
+        }
+        #top-menu, #container, #footer-menu{
+            position: relative;
+            width: 1500px;
+            margin: 0px auto;
+            height: 100%;
+
+        }
+
+        body{
+            background-image: url(images/dott.png);
+            
+        }
+        #img1{
+            margin: 30px;
+            width: 100%;
+        }
+        #img2{
+            margin: 25px;
+            border: 1px solid black;
+            width: 150px;
+        }
+
+
+        caption{
+            float: left;
+            width: 100px;
+            height: 30px;
+        }
+        .caption{
+            float: left;
+            height: 300px;
+            width: 300px;
+        }
+        li a{
+            width: 150px;
+            padding:  5px 0px;
+            font-size:  16px;
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            background: rgb(253, 253, 253);
+            border:  1px solid #000000;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        ul li{
+            width: 200px;
+            display: inline-block;
+            margin:  4px;
+            text-align: center;
+        }
+        .prod-list .caption{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            padding-top: 0px;
+            background: rgb(255, 255, 255);
+            opacity: 0;
+            transition: all 0.6s ease-in-out;
+        }
+        .prod-list li:hover .caption {
+            opacity: 1;
+            transform: translateY(-200);
+        }
+        .prod-list .caption li{
+            border: 1px solid black;
+            color:  #000000;
+            text-align: center;
+            margin-left: -16px;
+            width: 152px;
+        }
+        .caption li{
+            float:  left;
+            padding:  0;
+            margin:  0px;
+            overflow:  hidden;
+            position:  relative;
+        }
+
+        #contents1{
+            margin: 0px;
+            width: 230px;
+            height: 1200px;
+            padding: 20px;
+            border:  1px solid #8b8b8b;
+            background-color: white;
+            border-radius: 5px;
+            float: left;
+            margin-right: 10px;
+        }
+        #contents2{
+            margin-top: 35px;
+            margin-left: 320px;
+            width: 1000px;
+            background-color: white;
+            height: 1000px;
+            padding: 20px;
+            border:  1px solid #8b8b8b;
+            border-radius: 5px;
+        }
+
+        #p1{
+            color: #8b8b8b;
+            border-bottom:2px solid #ddd ;
+        }
+        .list-image2{
+            list-style-image: url(images/pp.jpg);
+            list-style-position: outside;
+        }
+        .list-image1{
+            list-style-image: url(images/strawberry1.png);
+            list-style-position: outside;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <div id="top-menu">
+    <header>
+        <div>
+            <ul class="prod-list">
+                <li>
+                    <a href="detail.html" >DETAIL</a> 
+                    <ul class="caption">
+                        <li><a href="detail1.html"> 2020</a></li>
+                        <li><a href="detail2.html"> 2021</a></li>
+                        <li><a href="detail3.html"> 2022</a></li>
+                        <li><a href="detail4.html"> 2023</a></li>
+                        <li><a href="detail5.html"> 2024</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                    <ul class="caption">
+                    </ul>
+                </li>
+                <li>
+                    <a href="posts.html" >POSTS</a>
+                    <ul class="caption">
+                        <li><a href="posts1.html">봉사활동</a></li>
+                        <li><a href="posts2.html">인턴십</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="home.html">HOME</a>
+                    <ul class="caption">
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="cotact.html" >CONTACT</a>
+                    <ul class="caption">
+                        <li><a href="contact1.html">help me</li></a>  
+                        <li><a href="contact2.html">contact</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="login.html" >LOGIN</a>
+                    <ul class="caption">
+                        <li><a href="login1.html"> 로그인</a></li>
+                        <li><a href="login2.html"> 회원 가입</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <img id="img1" src="images/hh.png" alt="width=100%">
+        </div>
+    </header>
+</div>
+</div>
+
+
+    <div id="main">
+        <div id="container">
+        <div id="contents1">
+            <img id="img2"  src="images/IMG_8404.jpeg" alt="최사랑" width="200"/>
+            <h1>최사랑</h1>
+            <p>만 24세</p>
+            <p id="p1">자바 풀스택 7기</p>
+            <ol class="list-image2">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>자바스크립트</li>
+            </ol>
+        </div>
+        <fieldset>
+
+            <img src="images/k.jpeg" ait="코딩봉사" width="200px">
+            <p><b>코드클럽 한국위원회와 함께 코딩 봉사를</b></p>
+            <p>2023.11 부터 시작하면 약 6주간 안산의 덕성초등학교에서 코딩봉사를 하였습니다.</p>
+            <P>6주라면 짧으면 짧고 긴 기간 동안 아이들과 함께 코딩에 대해 알아가며 수업하는 시간이 즐거웠습니다.</P>
+            <p>매 주 수업 후기를 작성하며 아이들의 난이도를 조절하려 노력 하였습니다.</p>
+            <p><i>작성한 카페글 내용 보러가기</i></p>
+            <a href="https://cafe.naver.com/codeclubswvolunteer" target="_self">naver.com</a>    
+            </fieldset>
+            <br>
+        
+            <fieldset>
+            <img src="images/u.png" ait="UtoPlanet" width="250px">
+            <p><b>UtoPlanet 일본 게임회사에서 인턴하다</b></p>
+            <p>2023.02-2023.03 일본의 <i>UtoPlanet</i>에서 인턴으로 근무 하였습니다.</p>
+            <p>주요 업무는 HP업데이트와 영업 부분이었습니다.</p>
+            <p>HP업데이트 업무를 맡는 동안 회사 내 직원 및 임원 분들의 조언을 들으면 열심히 HP업데이트에 임하였습니다.</p>
+            <p><i>회사 HP보러가기</i></p>
+            <a href="https://www.utoplanet.com/" target="_self">naver.com</a>    
+            </fieldset>
+            <br>
+            <fieldset>
+                <img src="images/e.jpeg" ait="UtoPlanet" width="300px">
+                <p><b>OpenCV를 이용하여 시각장애인을 위한 어플을 만들다</b></p>
+                <p>OpenCV 프로그래밍을 이용하여 시각장애인드에게 도움을 줄 수 있는 프로젝트를 진행하였습니다.</p>
+                <p>cascade classifier분류기를 사용하여 사람의 기쁨, 슬픔, 화남 등을 구분할 수 있는 프로그램을 만들었습니다.</p>
+                <p>4개월의 업무 결과 멀티미디어 경진대회 우수상을 받을 수 있었습니다.</p>    
+                </fieldset>
+
+
+
+
+    </div>
+    <div id="footer">
+
+    </div>
+    </div>
+
+</body>
+</html>
